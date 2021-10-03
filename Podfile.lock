@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (5.4.4)
+  - MBProgressHUD (1.2.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/ReactiveSwift (15.0.0):
+    - Moya/Core
+    - ReactiveSwift (~> 6.6.1)
+  - Nimble (9.0.1)
+  - Quick (4.0.0)
+  - ReactiveCocoa (11.2.2):
+    - ReactiveSwift (~> 6.6)
+  - ReactiveSwift (6.6.1)
+  - Realm (10.16.0):
+    - Realm/Headers (= 10.16.0)
+  - Realm/Headers (10.16.0)
+  - RealmSwift (10.16.0):
+    - Realm (= 10.16.0)
+  - SwiftLint (0.44.0)
+  - Swinject (2.8.0)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.2)
+  - Moya/ReactiveSwift
+  - Nimble (~> 9.0.1)
+  - Quick
+  - ReactiveCocoa
+  - ReactiveSwift
+  - RealmSwift
+  - SwiftLint
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - MBProgressHUD
+    - Moya
+    - Nimble
+    - Quick
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Realm
+    - RealmSwift
+    - SwiftLint
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  Nimble: 7bed62ffabd6dbfe05f5925cbc43722533248990
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+  ReactiveCocoa: e539cd41c523c8c80851b88e9723235c933b024b
+  ReactiveSwift: fab34244ad908808dc822bae352a058c8837c4ca
+  Realm: b6027801398f3743fc222f096faa85281b506e6c
+  RealmSwift: b02a3d0e4947955da960b642c98ad3a461fc4e70
+  SwiftLint: e96c0a8c770c7ebbc4d36c55baf9096bb65c4584
+  Swinject: db795b8d6d78559b25fbebb0170d2635be1176e2
+
+PODFILE CHECKSUM: b43da09103c02611f8fe83af06a396d94bc39329
+
+COCOAPODS: 1.11.0

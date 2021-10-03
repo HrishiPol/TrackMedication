@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wyf-L2-CPH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--History-->
+        <scene sceneID="KCa-fM-A04">
+            <objects>
+                <viewController storyboardIdentifier="HistoryViewController" id="fWX-n8-jDl" customClass="HistoryViewController" customModule="TrackMedicine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ll9-Bf-qLb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-2s-MvI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fWX-n8-jDl" id="kzM-Ml-L6j"/>
+                                    <outlet property="delegate" destination="fWX-n8-jDl" id="FAJ-51-oy2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OHq-sI-Jt8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F7A-2s-MvI" firstAttribute="top" secondItem="OHq-sI-Jt8" secondAttribute="top" id="4x2-1W-RxO"/>
+                            <constraint firstItem="OHq-sI-Jt8" firstAttribute="trailing" secondItem="F7A-2s-MvI" secondAttribute="trailing" id="7MY-pG-xwI"/>
+                            <constraint firstItem="OHq-sI-Jt8" firstAttribute="bottom" secondItem="F7A-2s-MvI" secondAttribute="bottom" id="TR7-Wu-XxH"/>
+                            <constraint firstItem="F7A-2s-MvI" firstAttribute="leading" secondItem="OHq-sI-Jt8" secondAttribute="leading" id="eDU-RF-CdT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="History" image="escape" catalog="system" id="DFv-Yo-wyj"/>
+                    <connections>
+                        <outlet property="listTableView" destination="F7A-2s-MvI" id="ti9-hI-9FT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9t-ZQ-HTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="415"/>
+        </scene>
+        <!--Today-->
+        <scene sceneID="9GF-oj-GqZ">
+            <objects>
+                <viewController storyboardIdentifier="TodayViewController" id="Yo3-jA-ilD" customClass="TodayViewController" customModule="TrackMedicine" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MCL-2a-43M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BcN-hl-0ws">
+                                <rect key="frame" x="16" y="68" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="07q-8Z-JfG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.039215686274509803" green="0.13725490196078433" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwv-zp-qb2">
+                                <rect key="frame" x="16" y="168" width="382" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5zj-p2-Dka"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" red="0.04087433964" green="0.13706937429999999" blue="0.305898577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfe-5S-OOv">
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="120"/>
+                                <color key="textColor" red="0.57162106040000005" green="0.85158830880000003" blue="0.36459267140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0i-36-NIT">
+                                <rect key="frame" x="24" y="689" width="366" height="100"/>
+                                <color key="backgroundColor" red="0.19021272659999999" green="0.3798535764" blue="0.60002434250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="M5C-Ic-2rL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                <state key="normal" title="Medicine Taken">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="medicineTakenButtonTapped:" destination="Yo3-jA-ilD" eventType="touchUpInside" id="bJY-Ua-hEg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2J5-Q2-02g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kwv-zp-qb2" firstAttribute="top" secondItem="BcN-hl-0ws" secondAttribute="bottom" constant="60" id="0b2-Qj-2Oo"/>
+                            <constraint firstItem="pfe-5S-OOv" firstAttribute="centerX" secondItem="MCL-2a-43M" secondAttribute="centerX" id="0v4-Af-Jtp"/>
+                            <constraint firstItem="Kwv-zp-qb2" firstAttribute="leading" secondItem="2J5-Q2-02g" secondAttribute="leading" constant="16" id="6rH-eJ-YE8"/>
+                            <constraint firstItem="2J5-Q2-02g" firstAttribute="bottom" secondItem="e0i-36-NIT" secondAttribute="bottom" constant="24" id="CvG-E6-fHF"/>
+                            <constraint firstItem="2J5-Q2-02g" firstAttribute="trailing" secondItem="e0i-36-NIT" secondAttribute="trailing" constant="24" id="ERI-nP-0qr"/>
+                            <constraint firstItem="BcN-hl-0ws" firstAttribute="leading" secondItem="2J5-Q2-02g" secondAttribute="leading" constant="16" id="SdD-Y6-l1A"/>
+                            <constraint firstItem="e0i-36-NIT" firstAttribute="leading" secondItem="2J5-Q2-02g" secondAttribute="leading" constant="24" id="ed3-bm-BpB"/>
+                            <constraint firstItem="BcN-hl-0ws" firstAttribute="top" secondItem="2J5-Q2-02g" secondAttribute="top" constant="24" id="gZs-4d-tHB"/>
+                            <constraint firstItem="pfe-5S-OOv" firstAttribute="centerY" secondItem="MCL-2a-43M" secondAttribute="centerY" id="ilP-7g-ZES"/>
+                            <constraint firstItem="2J5-Q2-02g" firstAttribute="trailing" secondItem="Kwv-zp-qb2" secondAttribute="trailing" constant="16" id="pyh-mt-wT2"/>
+                            <constraint firstItem="2J5-Q2-02g" firstAttribute="trailing" secondItem="BcN-hl-0ws" secondAttribute="trailing" constant="16" id="yQK-4T-qES"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Today" image="paperplane" catalog="system" id="cj8-fe-GQl"/>
+                    <connections>
+                        <outlet property="greetingLabel" destination="BcN-hl-0ws" id="FNF-WJ-tx8"/>
+                        <outlet property="medicineTakenButton" destination="e0i-36-NIT" id="teS-yE-rN3"/>
+                        <outlet property="scoreLabel" destination="pfe-5S-OOv" id="dRv-76-l2M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SnV-cS-YTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="-192"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Hdi-S9-oK4">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarController" id="wyf-L2-CPH" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hKh-C9-WfF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Yo3-jA-ilD" kind="relationship" relationship="viewControllers" id="8G5-4S-FTb"/>
+                        <segue destination="fWX-n8-jDl" kind="relationship" relationship="viewControllers" id="V5R-Xw-U2b"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfQ-tm-UW8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="111"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="escape" catalog="system" width="128" height="121"/>
+        <image name="paperplane" catalog="system" width="128" height="118"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
